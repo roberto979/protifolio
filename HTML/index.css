@@ -1,0 +1,213 @@
+/* General page styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Container */
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Header */
+
+#main-header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+#main-header h1 {
+    font-size: 45px;
+}
+
+
+.subtitle {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* Sections */
+
+.section {
+    padding: 50px 20px;
+}
+
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3a5f;
+}
+
+
+/* About section */
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* Profile image */
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #1e3a5f;
+}
+
+
+/* Highlighted text */
+
+.highlight {
+    color: #1e3a5f;
+    font-weight: bold;
+}
+
+
+/* Skills section */
+
+.skills-section {
+    background-color: #e8eef5;
+}
+
+
+/* Cards */
+
+.card {
+    background-color: white;
+
+    margin: 20px 0;
+    padding: 25px;
+
+    border: 2px solid #1e3a5f;
+
+    border-radius: 10px;
+}
+
+
+.card h3 {
+    color: #1e3a5f;
+    margin-bottom: 10px;
+}
+
+
+/* Lists */
+
+ul {
+    padding-left: 25px;
+}
+
+
+.hobbies li {
+    margin: 10px 0;
+}
+
+
+/* Contact section */
+
+.contact-section {
+    text-align: center;
+    background-color: #1e3a5f;
+    color: white;
+}
+
+
+.contact-section h2 {
+    color: white;
+}
+
+
+/* Links */
+
+.links {
+    margin-top: 20px;
+}
+
+
+.links a {
+    display: inline-block;
+
+    background-color: white;
+    color: #1e3a5f;
+
+    padding: 10px 20px;
+
+    margin: 10px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    border: 2px solid white;
+}
+
+
+/* Link hover effect */
+
+.links a:hover {
+    background-color: #1e3a5f;
+    color: white;
+
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    background-color: #111;
+
+    color: white;
+
+    padding: 20px;
+}
+
+
+/* Responsive layout */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 95%;
+    }
+
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    #main-header h1 {
+        font-size: 35px;
+    }
+
+}
