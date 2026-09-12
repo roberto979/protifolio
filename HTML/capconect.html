@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cape Connect</title>
+    <link rel="stylesheet" href="../CSS/capconect.css">
+</head>
+
+<body onLoad="initpage() ">
+   <script src="../JavaScript/capconect.js"></script> 
+
+    <header class="site-header">
+        <h1>Cape Connect</h1>
+        <p>Connecting students through events, opportunities and community.</p>
+    </header>
+
+    <nav class="main-nav" onclick="SetActive(this)">
+        <a #="#about"onclick="toggleDetaills("details1")">About</a>
+        <a #="#events"onclick="toggleDetaills("details2")">Events</a>
+        <a #="#join"onclick="toggleDetaills("details3")">Join Us</a>
+    </nav>
+
+    <main class="container">
+
+        <section id="about">
+            <h2>About Cape Connect</h2>
+
+            <p>
+                Cape Connect is a student community that helps students
+                meet new people, discover opportunities and participate
+                in activities around Cape Town.
+            </p>
+           
+            <img src="../HTML/minha foto .jpeg"
+            alt="Students working on web development"
+            class="about-image">
+
+            <p class="notice">
+                Membership is currently free for all registered students.
+            </p>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+
+            <article class="event-card">
+                <span class="badge">NEW</span>
+                <h3>Student Networking Evening</h3>
+                <p>Meet students from different programmes and build your network.</p>
+                <a href="#">View Event</a>
+            </article>
+
+            <article class="event-card">
+                <h3>Web Development Workshop</h3>
+                <p class="event-details"id="event-details1">Learn practical HTML and CSS skills while building a webpage.</p>
+                
+                
+
+               <img src="../HTML/minha foto .jpeg" alt="Students working on web development"
+                class="event-image">
+                <div><a href="#" onclick="toggleEventDetails('event-details1')">View Event</a></div>   
+            </article>
+
+            <article class="event-card">
+                <h3>Career Preparation Session</h3>
+                <p class="event-details"id="event-details2">Learn how to improve your CV and prepare for interviews.</p>
+                <a href="#">View Event</a>
+            </article>
+
+        </section>
+
+        <section id="join">
+            <h2>Join Cape Connect</h2>
+
+            <form id="join-form" onsubmit="return validateForm()">
+                <input type="text" id="name" name="name" placeholder="Your Name">
+                <button type="submit">Register</button>
+            </form>
+                
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Cape Connect</p>
+    </footer>
+
+</body>
+</html>

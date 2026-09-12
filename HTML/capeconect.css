@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #F8FAFC;
+    color: #1E293B;
+    line-height: 1.6;
+}
+
+header{
+    background-color: #172554;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.site-header p{
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.main-nav {
+    background-color: #2563EB;
+    text-align: center;
+    padding: 15px;
+}
+.main-nav a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    
+}
+
+.main-nav a:hover{
+    text-decoration: underline;
+    text-decoration-color: #F97316;
+}
+
+.main-nav a:focus{
+    outline: 3px solid #F97316
+
+}
+.main-nav a:apply{
+    outline: 3px solid #F97316;
+}
+
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+h2,
+h3{
+    color: #172554;
+
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 21px;
+}
+
+#about{
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+}
+
+about-image{
+    width: 100%;
+    max-width: 350px;
+    object-fit: cover;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+.notice{
+    background: #DBEAFE;
+    padding: 15px;
+    border-left: 5px solid #2563EB;
+    color: #172554;
+    font-weight: bold;
+}
+/*Reuasable styling for every card*/
+.event-card{
+    position: relative;
+    background-color: #FFFFFF;
+    border:1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+event-image{
+    width: 100%;
+    max-width: 220px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.event-card a{
+    color: #2563EB;
+    font-weight: bold;
+
+}
+   
+.event-card a:hover{
+    color: #F97316;
+}
+
+.badge{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #F97316;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#Join{
+    background-color: #DBEAFE;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+#Join a{
+    color: #2563EB;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #172554;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p{
+    margin: 0;
+}
+.active-link{
+    color: #F97316;
+    text-decoration: underline;
+}
+.event-card{
+    display: none;
+}
